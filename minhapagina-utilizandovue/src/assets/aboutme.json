@@ -1,0 +1,42 @@
+{
+    "photo": "/Foto-Perfil.jpg",
+    "name": "Angelo Gabriel Fabricio Zampieri",
+    "description": "Bacharel em Engenharia de Computação com mais de 5 anos de experiência técnica em Suporte de TI (Helpdesk/Field Service), manutenção de infraestrutura, atendimento ao usuário e resolução de incidentes. Sólida atuação no diagnóstico e manutenção corretiva/preventiva de hardware, administração de sistemas operacionais (Windows/Linux) e redes locais. Vivência empreendedora na gestão de serviços de TI, automação de processos e desenvolvimento de soluções sob medida. Perfil focado em eficiência de atendimento, melhoria contínua e resolução analítica de problemas.",
+
+"academic": [
+        {
+            "course": "Bacharelado em Engenharia de Computação",
+            "institution": "Universidade do Oeste de Santa Catarina (UNOESC)",
+            "year": "2021 - 2025"
+        },
+        {
+            "course": "Ensino Médio",
+            "institution": "Colégio Estadual Dom Felicio César da Cunha Vasconcelos",
+            "year": "2017 - 2020"
+        }
+    ],
+    "experience": [
+        {
+            "position": "Analista de Suporte Técnico",
+            "company": "Tech Informática",
+            "year": "2021 - Presente",
+            "description": "Responsável pelo suporte técnico a usuários, manutenção de hardware e software, administração de redes e sistemas operacionais."
+        },
+        {
+            "position": "Analista de Suporte / Helpdesk",
+            "company": "Surdi Informática (Alocado na Irani Papel e Embalagem S.A.)",
+            "year": "2022 - 2024",
+            "description": "Atendimento a chamados de suporte, resolução de incidentes e manutenção preventiva de equipamentos."
+        }
+    ],
+  "contact": [
+        {
+            "type": "Email",
+            "value": "angelo-zampieri@hotmail.com"
+        },
+        {
+            "type": "LinkedIn",
+            "value": "https://www.linkedin.com/in/angelo-zampieri/"
+        }
+    ]
+}

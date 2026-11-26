@@ -1,0 +1,297 @@
+/* Paleta original do tema Vue. */
+:root {
+  --vt-c-white: #ffffff;
+  --vt-c-white-soft: #f8f8f8;
+  --vt-c-white-mute: #f2f2f2;
+
+  --vt-c-black: #181818;
+  --vt-c-black-soft: #222222;
+  --vt-c-black-mute: #282828;
+
+  --vt-c-indigo: #2c3e50;
+
+  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
+  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
+  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+
+  --vt-c-text-light-1: var(--vt-c-indigo);
+  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
+  --vt-c-text-dark-1: var(--vt-c-white);
+  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+}
+
+/* Cores semânticas usadas pela página. */
+:root {
+  --color-background: var(--vt-c-white);
+  --color-background-soft: var(--vt-c-white-soft);
+  --color-background-mute: var(--vt-c-white-mute);
+  --color-border: var(--vt-c-divider-light-2);
+  --color-border-hover: var(--vt-c-divider-light-1);
+  --color-heading: var(--vt-c-text-light-1);
+  --color-text: var(--vt-c-text-light-1);
+
+  --section-gap: 160px;
+}
+
+/* Preferências globais e tipografia base. */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Estrutura geral da página. */
+.layout {
+  min-height: 100vh;
+}
+
+/* Cabeçalho fixo, menu e título da guia. */
+header {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  min-height: 64px;
+  padding: 0 2rem;
+  background: rgb(35, 35, 35);
+  line-height: 1.5;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu a {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.menu a:not(:last-child) {
+  border-right: 1px solid #ccc;
+}
+
+.page-title {
+  position: absolute;
+  right: 2rem;
+  margin: 0;
+  padding-left: 2rem;
+  border-left: 1px solid #ccc;
+}
+
+/* Aviso flutuante de nova mensagem. */
+.alert {
+  position: fixed;
+  z-index: 20;
+  bottom: 1rem;
+  left: 75rem;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  color: #fff;
+  background: #d32f2f;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 25%);
+}
+
+.alert button {
+  margin-left: 1rem;
+  padding: 0 0.25rem;
+  color: #fff;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+/* Área de conteúdo e seções do menu. */
+main {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 12rem;
+  padding: 80px 1.5rem 1.5rem;
+}
+
+.page-section {
+  width: 100%;
+  margin: 0;
+  padding: 1.5rem;
+}
+
+.foto-perfil {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Cartões de formação e experiência. */
+.info-card {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 0 1rem;
+  padding: 1.25rem;
+  background: rgb(35, 35, 35);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.info-card h3 {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+main p {
+  margin-top: 0.5rem;
+  line-height: 1.7;
+}
+
+/* Ícones e links de contato. */
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.contact-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 2rem;
+  width: 2rem;
+  height: 2rem;
+  color: #fff;
+  background: #555;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+/* Bate-papo fixo no rodapé. */
+footer {
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  padding: 1rem;
+  background: rgb(35, 35, 35);
+  border-top: 1px solid #ddd;
+}
+
+.chat-messages {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+.msg__chat p {
+  margin: 0;
+}
+
+/* Campo de mensagem e botão de envio. */
+.form__chat {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.form__chat textarea {
+  width: 400px;
+  height: 70px;
+  padding: 0.75rem;
+  color: #ffffff;
+  background-color: rgb(35, 35, 35);
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: none;
+}
+
+.form__chat textarea::placeholder {
+  color: #777;
+}
+
+.form__chat button {
+  padding: 0.75rem 1.25rem;
+  color: white;
+  background-color: #168c70;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.form__chat button:hover {
+  background-color: #11745d;
+  transform: translateY(-1px);
+}
+
+.form__chat button:active {
+  transform: translateY(0);
+}
+
+/* Tema escuro do sistema. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--vt-c-black);
+    --color-background-soft: var(--vt-c-black-soft);
+    --color-background-mute: var(--vt-c-black-mute);
+    --color-border: var(--vt-c-divider-dark-2);
+    --color-border-hover: var(--vt-c-divider-dark-1);
+    --color-heading: var(--vt-c-text-dark-1);
+    --color-text: var(--vt-c-text-dark-2);
+  }
+}
+
+/* Evita que o campo de mensagem exceda a largura em telas estreitas. */
+@media (max-width: 520px) {
+  .form__chat textarea {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .page-title {
+    display: none;
+  }
+
+  header {
+    padding: 0 0.5rem;
+  }
+
+  .menu a {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+}
